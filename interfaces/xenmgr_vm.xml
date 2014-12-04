@@ -4,6 +4,7 @@
   <interface name="com.citrix.xenclient.xenmgr.vm">
     <tp:docstring>VM interface. Property access goes through policy checks.</tp:docstring>
     <property name="state" type="s" access="read"/>
+    <property name="blah" type="s" access="read"/>
     <property name="acpi-state" type="i" access="read"/>
     <property name="domid" type="i" access="read"/>
     <property name="type" type="s" access="readwrite"/>
@@ -336,6 +337,7 @@
     <tp:docstring>Allows unrestricted access to VM properties (without policy checks) so daemons in the control domain (dom0) can easily change settings.</tp:docstring>
 
     <property name="state" type="s" access="read"/>
+    <property name="blah" type="s" access="read"/>
     <property name="acpi-state" type="i" access="read"/>
     <property name="domid" type="i" access="read"/>
     <property name="type" type="s" access="readwrite"/>
