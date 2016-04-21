@@ -198,7 +198,7 @@
     <property name="preserve-on-reboot" type="b" access="readwrite"><tp:docstring>After reboot, keep the vm in rebooted state instead of automatically restarting it</tp:docstring></property>
     <property name="boot-sentinel" type="s" access="readwrite"><tp:docstring>Name of xenstore node to wait on before completing vm startup from toolstack PoV. Useful if VM exports services which need to be immediately usable by other vms</tp:docstring></property>
     <property name="hpet" type="b" access="readwrite"><tp:docstring>HPET support</tp:docstring></property>
-    <property name="timer-mode" type="i" access="readwrite"><tp:docstring>Domain timer mode</tp:docstring></property>
+    <property name="timer-mode" type="s" access="readwrite"><tp:docstring>Domain timer mode</tp:docstring></property>
     <property name="nestedhvm" type="b" access="readwrite"><tp:docstring>Enable nested virtualization</tp:docstring></property>
     <property name="serial" type="s" access="readwrite"><tp:docstring>Serial port specification</tp:docstring></property>
 
@@ -534,7 +534,7 @@
     <property name="preserve-on-reboot" type="b" access="readwrite"><tp:docstring>After reboot, keep the vm in rebooted state instead of automatically restarting it</tp:docstring></property>
     <property name="boot-sentinel" type="s" access="readwrite"><tp:docstring>Name of xenstore node to wait on before completing vm startup from toolstack PoV. Useful if VM exports services which need to be immediately usable by other vms</tp:docstring></property>
     <property name="hpet" type="b" access="readwrite"><tp:docstring>HPET support</tp:docstring></property>
-    <property name="timer-mode" type="i" access="readwrite"><tp:docstring>Domain timer mode</tp:docstring></property>
+    <property name="timer-mode" type="s" access="readwrite"><tp:docstring>Domain timer mode</tp:docstring></property>
     <property name="nestedhvm" type="b" access="readwrite"><tp:docstring>Enable nested virtualization</tp:docstring></property>
     <property name="serial" type="s" access="readwrite"><tp:docstring>Serial port specification</tp:docstring></property>
   </interface>
