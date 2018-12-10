@@ -50,7 +50,7 @@
     <property name="enabled" type="b" access="readwrite"> <tp:docstring>Disk enabled/disabled flag.</tp:docstring> </property>
     <property name="encryption-key-set" type="b" access="read"><tp:docstring>Whether this VHD uses encryption key.</tp:docstring></property>
     <property name="virtual-size-mb" type="i" access="read"><tp:docstring>Virtual size in megabytes.</tp:docstring></property>
-    <property name="utilization-bytes" type="x" access="read"><tp:docstring>Physical utilisation in bytes.</tp:docstring></property>
+	<property name="utilization-bytes" type="x" access="read"><tp:docstring>Physical utilisation in bytes.</tp:docstring></property>
 
     <!-- makes this point to VHD image -->
     <method name="attach_vhd">

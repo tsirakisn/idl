@@ -233,20 +233,20 @@
       <arg name="value" type="s" direction="in"/>
     </method>
 
-    <method name="add_disk">
+	<method name="add_disk">
       <tp:docstring>Add a new disk to VM.</tp:docstring>
       <arg name="path" type="o" direction="out"/>
-    </method>
+	</method>
 
     <method name="list_disks">
       <tp:docstring>List the disk objects attached to this VM.</tp:docstring>
       <arg name="" type="ao" direction="out"/>
     </method>
 
-    <method name="add_nic">
+	<method name="add_nic">
       <tp:docstring>Add a new NIC to the VM.</tp:docstring>
       <arg name="path" type="o" direction="out"/>
-    </method>
+	</method>
 
     <method name="list_nics">
       <tp:docstring>List the NIC objects attached to the VM.</tp:docstring>
@@ -340,9 +340,13 @@
     </method>
   </interface>
 
-  <interface name="com.citrix.xenclient.xenmgr.vm.unrestricted">
+    <interface name="com.citrix.xenclient.xenmgr.vm.unrestricted">
     <tp:docstring>Allows unrestricted access to VM properties (without policy checks) so daemons in the control domain (dom0) can easily change settings.</tp:docstring>
 
+		<property name="domstore-read-access" type="b" access="readwrite"><tp:docstring>Configure domain read access to domstore.</tp:docstring></property>
+		<property name="domstore-write-access" type="b" access="readwrite"><tp:docstring>Configure domain write access to domstore.</tp:docstring></property>
+    </interface>
+ <!--
     <property name="state" type="s" access="read"/>
     <property name="acpi-state" type="i" access="read"/>
     <property name="domid" type="i" access="read"/>
@@ -545,7 +549,7 @@
     <property name="nestedhvm" type="b" access="readwrite"><tp:docstring>Enable nested virtualization</tp:docstring></property>
     <property name="serial" type="s" access="readwrite"><tp:docstring>Serial port specification</tp:docstring></property>
     <property name="bios" type="s" access="readwrite"><tp:docstring>Bios specification</tp:docstring></property>
-  </interface>
+  </interface>-->
 
   <interface name="com.citrix.xenclient.xenmgr.vm.product">
     <tp:docstring>Configuration of products (services) in the VM.</tp:docstring>
