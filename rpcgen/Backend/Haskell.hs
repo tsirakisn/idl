@@ -503,7 +503,8 @@ orgFreedesktopDBusPropertiesGet input intfs = Function hdr body where
       prop_name_as_str prop = quote $ propertyName prop
       body  = Expression $ "case (intf,property) of\n"
               ++ properties_call_stubs
-              ++ indent 4 "_ -> error $ \"property \" ++ intf ++ \".\" ++ property ++ \" is not readable, or does not exist\""
+              ++ indent 4 "_ -> return ()"
+              -- ++ indent 4 "_ -> error $ \"property \" ++ intf ++ \".\" ++ property ++ \" is not readable, or does not exist\""
       properties_call_stubs = indent 4 . unlines $ map property_call_stub props
       property_call_stub (intf,prop) =
           "(" ++ quote (interfaceName intf) ++ "," ++ prop_name_as_str prop ++ ") -> " ++ call_str (intf,prop)
