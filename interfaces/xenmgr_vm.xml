@@ -512,8 +512,8 @@
     <property name="timer-mode" type="s" access="readwrite"><tp:docstring>Domain timer mode</tp:docstring></property>
     <property name="nestedhvm" type="b" access="readwrite"><tp:docstring>Enable nested virtualization</tp:docstring></property>
     <property name="serial" type="s" access="readwrite"><tp:docstring>Serial port specification</tp:docstring></property>
-	<property name="bios" type="s" access="readwrite"><tp:docstring>Bios specification</tp:docstring></property>
    -->
+	<property name="bios" type="s" access="readwrite"><tp:docstring>Bios specification</tp:docstring></property>
   </interface>
 
   <!--
